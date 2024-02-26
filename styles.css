@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    font: 22px/1.5 "Ubuntu", sans-serif;
+    width: 2480px;
+    max-width: 2480px;
+    min-width: 2480px;
+    height: 3508px;
+    max-height: 3508px;
+    min-height: 3508px;
+    display: flex;
+    background-color: #fdfdfe;
+
+    border: 1px solid red;
+}
+
+
+body {
+    display: flex;
+    flex: 1 0 100%;
+    gap: 151px;
+    padding: 40px 40px 40px 60px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+}
+
+main .head-section {
+    display: flex;
+    max-width: 1348px;
+    height: 486px;
+    align-items: center;
+    gap: 2em;
+
+}
+
+
+.head-section .head-data {
+    position: relative;
+
+
+}
+
+.head-section .head-data h1 {
+    color: #303b4d;
+    font-size: 3.8em;
+    font-weight: 400;
+}
+
+.head-section .head-data h2 {
+    font-size: 2em;
+    color: #449096;
+    font-weight: 400;
+    line-height: 1;
+    padding-bottom: 1rem;
+}
+
+.head-section .head-data p {
+    font-size: 1.28em;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.head-section .head-media {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex: 1 0 auto;
+    border-radius: 50%;
+    border: 10px solid #303b4d;
+}
+
+.head-media .image {
+    width: 416px;
+    height: 416px;
+    border-radius: 50%;
+    border: 10px solid #fdfdfe;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: auto;
+    height: 100%;
+    display: block;
+    left: -15px;
+    position: relative;
+
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    flex: 1 0 813px;
+}
+
+aside .personal-information,
+aside .contacts-section {
+    background-color: #303b4d;
+    color: white;
+    border-radius: 1em;
+}
+
+
+aside .contacts-section ul {
+    padding: 2em;
+    list-style: none;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+aside .contacts-section ul li {
+    display: flex;
+    gap: 33px;
+}
+
+aside .contacts-section ul li > * {
+    color: white;
+    text-decoration: none;
+    margin: auto 0;
+    font-size: 1.5em;
+}
+
+aside .contacts-section ul li .icon {
+    background-color: white;
+    width: 96px;
+    height: 96px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+aside .contacts-section ul li .icon i {
+    color: #303b4d;
+    width: auto;
+    height: auto;
+    font-size: 55px;
+    margin: auto;
+}
