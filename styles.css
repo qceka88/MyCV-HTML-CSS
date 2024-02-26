@@ -45,13 +45,13 @@ main .head-section {
 
 .head-section .head-data {
     position: relative;
-
+    margin-right: 50px;
 
 }
 
 .head-section .head-data h1 {
     color: #303b4d;
-    font-size: 3.8em;
+    font-size: 4em;
     font-weight: 400;
 }
 
@@ -64,8 +64,8 @@ main .head-section {
 }
 
 .head-section .head-data p {
-    font-size: 1.28em;
-    font-weight: 400;
+    font-size: 1.4em;
+    font-weight: 420;
     text-align: justify;
     line-height: 1.4;
 }
