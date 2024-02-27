@@ -1,12 +1,21 @@
+:root {
+    --light-blue: #449297;
+    --dark-blue: #303b4d;
+    --white: #fdfdfe;
+    --gray: #7a7a7a;
+    --skills-background: #abb0b7;
+    --black: #000001;
+}
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-
+/*22 initial check with 25px*/
 html {
-    font: 22px/1.5 "Ubuntu", sans-serif;
+    font: 25px/1.5 "Ubuntu", sans-serif;
     width: 2480px;
     max-width: 2480px;
     min-width: 2480px;
@@ -14,8 +23,7 @@ html {
     max-height: 3508px;
     min-height: 3508px;
     display: flex;
-    background-color: #fdfdfe;
-
+    background-color: var(--white);
     border: 1px solid red;
 }
 
@@ -23,81 +31,153 @@ html {
 body {
     display: flex;
     flex: 1 0 100%;
-    gap: 151px;
+    gap: 100px;
     padding: 40px 40px 40px 60px;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    flex: 1 1 100%;
+    flex: 1 0 1450px;
+    gap: 2em;
 }
+
+main ul {
+    list-style-type: none;
+}
+
+.fa-square {
+    color: var(--light-blue);
+    padding-right: 0.5em;
+}
+
 
 main .head-section {
     display: flex;
-    max-width: 1348px;
-    height: 486px;
     align-items: center;
-    gap: 2em;
+    gap: 44px;
+    position: relative;
+    padding: 35px;
+}
 
+
+.head-section .head-media {
+    display: flex;
+    overflow: hidden;
+    flex: 1 0 auto;
+    border-radius: 50%;
+    border: 10px solid var(--dark-blue);
+}
+
+.head-section .head-media .image {
+    width: 416px;
+    height: 416px;
+    border-radius: 50%;
+    border: 10px solid var(--white);
+    overflow: hidden;
+
+}
+
+.head-media .image img {
+    width: auto;
+    height: 100%;
+    display: block;
+    left: -30px;
+    position: relative;
 }
 
 
 .head-section .head-data {
     position: relative;
-    margin-right: 50px;
-
 }
 
 .head-section .head-data h1 {
-    color: #303b4d;
-    font-size: 4em;
+    color: var(--dark-blue);
+    font-size: 3.8em;
+    letter-spacing: 1.5px;
     font-weight: 400;
+    line-height: 1;
 }
 
 .head-section .head-data h2 {
-    font-size: 2em;
-    color: #449096;
+    font-size: 1.8em;
+    color: var(--light-blue);
     font-weight: 400;
-    line-height: 1;
-    padding-bottom: 1rem;
+    line-height: 1.2;
+    padding: 20px 0;
 }
 
 .head-section .head-data p {
-    font-size: 1.4em;
-    font-weight: 420;
+    font-size: 1.35em;
+    font-weight: 400;
     text-align: justify;
-    line-height: 1.4;
+    line-height: 1.2;
+    width: 870px;
 }
 
-.head-section .head-media {
+
+main .section {
     display: flex;
-    justify-content: center;
-    overflow: hidden;
-    flex: 1 0 auto;
-    border-radius: 50%;
-    border: 10px solid #303b4d;
+    flex-direction: column;
 }
 
-.head-media .image {
-    width: 416px;
-    height: 416px;
-    border-radius: 50%;
-    border: 10px solid #fdfdfe;
-    overflow: hidden;
+.section header {
     display: flex;
-    justify-content: center;
+    gap: 1em;
 }
 
-img {
-    width: auto;
-    height: 100%;
-    display: block;
-    left: -15px;
-    position: relative;
-
+.section header .section-header-icon {
+    width: 150px;
+    height: 106px;
 }
 
+.section header h1 {
+    font-size: 2.6em;
+    margin: auto 0;
+    color: var(--dark-blue);
+}
+
+.section .data-card {
+    padding: 1em 2em;
+}
+
+.section .data-card h3,
+.section .data-card h2 {
+    font-size: 2em;
+    line-height: 1.2;
+}
+
+.section .data-card h3 {
+    font-weight: 400;
+}
+
+.section .data-card .card-location-time {
+    display: flex;
+    justify-content: space-between;
+    color: var(--light-blue);
+    font-style: italic;
+}
+
+.section .data-card > p:last-of-type {
+    color: var(--light-blue);
+    font-style: italic;
+    padding-top: 1em;
+}
+
+.section:last-of-type .data-card > p:first-of-type {
+    color: var(--gray);
+    font-style: italic;
+}
+
+.section:last-of-type ul li {
+    font-style: italic;
+}
+
+.section .data-card span,
+.section .data-card p {
+    font-size: 1.25em;
+    font-weight: 400;
+}
 
 aside {
     display: flex;
@@ -108,16 +188,16 @@ aside {
 
 aside .personal-information,
 aside .contacts-section {
-    background-color: #303b4d;
-    color: white;
+    background-color: var(--dark-blue);
+    color: var(--white);
     border-radius: 1em;
+    padding: 2em;
 }
 
 
 aside .contacts-section ul {
-    padding: 2em;
     list-style: none;
-    gap: 2em;
+    gap: 1.5em;
     display: flex;
     flex-direction: column;
 }
@@ -128,14 +208,14 @@ aside .contacts-section ul li {
 }
 
 aside .contacts-section ul li > * {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     margin: auto 0;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
-aside .contacts-section ul li .icon {
-    background-color: white;
+.icon {
+    background-color: var(--white);
     width: 96px;
     height: 96px;
     border-radius: 20px;
@@ -144,9 +224,69 @@ aside .contacts-section ul li .icon {
 }
 
 aside .contacts-section ul li .icon i {
-    color: #303b4d;
+    color: var(--dark-blue);
     width: auto;
     height: auto;
     font-size: 55px;
     margin: auto;
+}
+
+aside .contacts-section ul li .icon img {
+    width: 45px;
+    height: auto;
+    margin: auto;
+}
+
+aside .personal-information header {
+    display: flex;
+    gap: 1em;
+}
+
+aside .personal-information header h1 {
+    font-size: 2.5em;
+    margin: auto 0;
+}
+
+aside .personal-information .personal-skills ul {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 2em 0;
+
+}
+
+.personal-skills ul li {
+    background-color: var(--skills-background);
+    color: var(--black);
+    padding: 0.5em 1.75em 0.5em 1.5em;
+    flex: 0 0 auto;
+    border-radius: 0.5em;
+
+}
+
+.personal-skills ul li span {
+    font-size: 1.3em;
+}
+
+.personal-information .personal-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.personal-projects h3 {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+.personal-projects ul {
+    list-style: none;
+}
+
+.personal-projects ul li a,
+.personal-projects ul li span {
+    font-size: 1.25em;
+    font-weight: 400;
+}
+.personal-projects ul li a {
+    color: var(--light-blue);
 }
