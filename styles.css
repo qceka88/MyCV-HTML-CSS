@@ -24,14 +24,14 @@ html {
     min-height: 3508px;
     display: flex;
     background-color: var(--white);
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 
 body {
     display: flex;
     flex: 1 0 100%;
-    gap: 100px;
+    gap: 2.5em;
     padding: 40px 40px 40px 60px;
 }
 
@@ -161,7 +161,7 @@ main .section {
 .section .data-card > p:last-of-type {
     color: var(--light-blue);
     font-style: italic;
-    padding-top: 1em;
+    padding-top: 0.3em;
 }
 
 .section:last-of-type .data-card > p:first-of-type {
@@ -182,8 +182,8 @@ main .section {
 aside {
     display: flex;
     flex-direction: column;
-    gap: 41px;
-    flex: 1 0 813px;
+    gap: 40px;
+    flex: 1 0 850px;
 }
 
 aside .personal-information,
@@ -256,6 +256,10 @@ aside .personal-information .personal-skills ul {
 
 }
 
+.personal-skills {
+    padding-bottom: 1em;
+}
+
 .personal-skills ul li {
     background-color: var(--skills-background);
     color: var(--black);
@@ -274,19 +278,55 @@ aside .personal-information .personal-skills ul {
     flex-direction: column;
     gap: 1em;
 }
-.personal-projects h3 {
-    font-size: 1.25em;
-    font-weight: 400;
+
+.personal-projects header {
+    padding-bottom: 0.4em;
 }
+
+.personal-projects h3 {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
 .personal-projects ul {
     list-style: none;
 }
 
 .personal-projects ul li a,
 .personal-projects ul li span {
-    font-size: 1.25em;
-    font-weight: 400;
+    font-size: 1.3em;
+    font-weight: 300;
 }
+
 .personal-projects ul li a {
     color: var(--light-blue);
+}
+
+.personal-projects ul li span {
+    line-height: 1.2;
+}
+
+aside .personal-certificates {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.personal-certificates header {
+    padding-top: 3em;
+}
+
+.personal-certificates .links {
+    display: flex;
+    align-items: start;
+    gap: 1em;
+}
+
+.links {
+    font-size: 1.2em;
+}
+
+.links a {
+    color: var(--light-blue);
+    margin-left: 10px;
 }
