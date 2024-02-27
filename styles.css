@@ -321,7 +321,10 @@ aside .personal-certificates {
     align-items: start;
     gap: 1em;
 }
-
+.personal-certificates .certificate-card h1{
+    font-size: 1.4em;
+    font-weight: 400;
+}
 .links {
     font-size: 1.2em;
 }
