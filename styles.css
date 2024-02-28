@@ -51,6 +51,13 @@ main ul {
     padding-right: 0.5em;
 }
 
+.fa-circle {
+    color: var(--light-blue);
+    padding-right: 0.5em;
+    font-size: .8em;
+
+}
+
 
 main .head-section {
     display: flex;
@@ -179,6 +186,14 @@ main .section {
     font-weight: 400;
 }
 
+.my-custom {
+    padding-top: 0.6em;
+}
+
+.my-custom p {
+    color: var(--light-blue);
+}
+
 aside {
     display: flex;
     flex-direction: column;
@@ -211,7 +226,7 @@ aside .contacts-section ul li > * {
     color: var(--white);
     text-decoration: none;
     margin: auto 0;
-    font-size: 1.25em;
+    font-size: 1.3em;
 }
 
 .icon {
@@ -321,10 +336,12 @@ aside .personal-certificates {
     align-items: start;
     gap: 1em;
 }
-.personal-certificates .certificate-card h1{
+
+.personal-certificates .certificate-card h1 {
     font-size: 1.4em;
     font-weight: 400;
 }
+
 .links {
     font-size: 1.2em;
 }
