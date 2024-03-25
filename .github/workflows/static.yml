@@ -18,6 +18,8 @@ jobs:
   deploy-test:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Vercel CLI
+        run: npm install -g vercel
       - name: Vercel Actions
         uses: nexterias/actions-vercel@v1.0.3
         with:
