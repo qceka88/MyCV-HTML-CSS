@@ -13,28 +13,11 @@ jobs:
     - name: Vercel Actions
       uses: nexterias/actions-vercel@v1.0.3
       with:
-        # Vercel token: https://vercel.com/account/tokens
         token:
-          - https://api.vercel.com/v1/integrations/deploy/prj_UqzlZ7ILdqekEqFCKdPIxSeTV44m/TyIAAkKigk
+          - ${{ secrets.VERCEL_TOKEN }}
         project-id:
-        # User ID within Vercel
+          - ${{ secrets.VERCEL_PROJECT_ID }}
         org-id:
-        # GitHub Token
-        github-token: # optional
-        # Create a production deployment
-        production: # optional, default is false
-        # Use the --prebuilt option
-        prebuilt: # optional, default is false
-        # Current Working Directory (default: process.cwd())
-        cwd: # optional
-        # Assign domains (multiple domains can be specified)
-        domain-alias: # optional
-        # Name for the target deployment environment
-        github-deployment-environment: # optional
-          - frontend
-        public: # optional, default is false
-        # Similar to env option but for build time only.
-        build-env: # optional
-        # Include an env var during run time
-        env: # optional
-          
+          - ${{ secrets.VERCEL_USER_ID }}
+        github-token:
+          - ${{ secrets.MY_PERSONAL_GH_TOKEN }}
