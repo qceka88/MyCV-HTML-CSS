@@ -14,8 +14,8 @@ jobs:
     steps:
         - name: Checkout Repository
           uses: actions/checkout@v2
-        - name: broke CI/CD to test deployment
-          run: python manage.py runserver
+#        - name: broke CI/CD to test deployment
+#          run: python manage.py runserver
 
   deploy-test:
     runs-on: ubuntu-latest
