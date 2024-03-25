@@ -9,17 +9,20 @@ on:
 
 jobs:
   # Single deploy job since we're just deploying
-  deploy:
+  test-job:
     runs-on: ubuntu-latest
-  steps:
-    - name: Vercel Actions
-      uses: nexterias/actions-vercel@v1.0.3
-      with:
-        token:
-          - ${{ secrets.VERCEL_TOKEN }}
-        project-id:
-          - ${{ secrets.VERCEL_PROJECT_ID }}
-        org-id:
-          - ${{ secrets.VERCEL_USER_ID }}
-        github-token:
-          - ${{ secrets.MY_PERSONAL_GH_TOKEN }}
+    steps:
+        - name: Checkout Repository
+          uses: actions/checkout@v2
+
+  deploy-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Vercel Actions
+        uses: nexterias/actions-vercel@v1.0.3
+        with:
+          token: ${{ secrets.VERCEL_TOKEN }}
+          project-id: ${{ secrets.VERCEL_PROJECT_ID }}
+          org-id:  ${{ secrets.VERCEL_USER_ID }}
+          github-token: ${{ secrets.MY_PERSONAL_GH_TOKEN }}
+    needs: test-job
