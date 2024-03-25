@@ -27,4 +27,6 @@ jobs:
           project-id: ${{ secrets.VERCEL_PROJECT_ID }}
           org-id:  ${{ secrets.VERCEL_USER_ID }}
           github-token: ${{ secrets.MY_PERSONAL_GH_TOKEN }}
+          production: true
+          public: true
     needs: test-job
