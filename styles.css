@@ -24,7 +24,7 @@ html {
     min-height: 3508px;
     display: flex;
     background-color: var(--white);
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 
@@ -39,7 +39,7 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1 0 1450px;
-    gap: 2em;
+    gap: 1.1em;
 }
 
 main ul {
