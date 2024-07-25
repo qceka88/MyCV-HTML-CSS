@@ -24,14 +24,14 @@ html {
     min-height: 3508px;
     display: flex;
     background-color: var(--white);
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 
 body {
     display: flex;
     flex: 1 0 100%;
-    gap: 2.5em;
+    gap: 0.5em;
     padding: 40px 40px 40px 60px;
 }
 
@@ -349,4 +349,17 @@ aside .personal-certificates {
 .links a {
     color: var(--light-blue);
     margin-left: 10px;
+}
+
+.work-experience {
+    display: flex;
+    flex-wrap: wrap;
+}
+.experience-card {
+    width: 50%;
+    height: auto;
+}
+
+.experience-card:first-child{
+    width: 100%;
 }
