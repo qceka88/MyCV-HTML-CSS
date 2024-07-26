@@ -24,7 +24,7 @@ html {
     min-height: 3508px;
     display: flex;
     background-color: var(--white);
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 
@@ -39,7 +39,7 @@ main {
     display: flex;
     flex-direction: column;
     flex: 1 0 1450px;
-    gap: 1.1em;
+    gap: 0.7em;
 }
 
 main ul {
@@ -145,7 +145,7 @@ main .section {
 }
 
 .section .data-card {
-    padding: 1em 2em;
+    padding: 0.8em 2em;
 }
 
 .section .data-card h3,
@@ -197,7 +197,7 @@ main .section {
 aside {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
     flex: 1 0 850px;
 }
 
@@ -206,7 +206,7 @@ aside .contacts-section {
     background-color: var(--dark-blue);
     color: var(--white);
     border-radius: 1em;
-    padding: 2em;
+    padding: 1.5em 2em;
 }
 
 
