@@ -32,7 +32,7 @@ body {
     display: flex;
     flex: 1 0 100%;
     gap: 0.5em;
-    padding: 30px 30px 30px 40px;
+    padding: 40px 40px 40px 40px;
 }
 
 main {
@@ -151,7 +151,7 @@ main .section {
 .section .data-card h3,
 .section .data-card h2 {
     font-size: 2em;
-    line-height: 1.2;
+    line-height: 1.1;
 }
 
 .section .data-card h3 {
