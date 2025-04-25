@@ -24,7 +24,7 @@ html {
     min-height: 3508px;
     display: flex;
     background-color: var(--white);
-    /*border: 1px solid red;*/
+    border: 1px solid red;
 }
 
 
